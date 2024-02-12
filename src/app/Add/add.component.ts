@@ -1,11 +1,15 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
+import { NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-add',
   templateUrl: './add.component.html',
   styleUrls: ['./add.component.css']
 })
-export class AddComponent {
+export class AddComponent  implements OnInit{
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
   itemName: string = '';
   itemDescription: string = '';
 
